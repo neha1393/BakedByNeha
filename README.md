@@ -1,73 +1,132 @@
-# React + TypeScript + Vite
+# 🎀 BakesByNeha
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack recipe web app built with **React** frontend and **Python FastAPI** backend. Browse beautiful baking recipes, click to view ingredients and instructions!
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- 🌸 Beautiful pastel pink UI
+- 🍰 5 handpicked baking recipes
+- 📖 Click any recipe card to see full details
+- 🔗 REST API backend with FastAPI
+- 💾 SQLite database with SQLAlchemy ORM
+- ⚛️ React with client-side routing (React Router)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Layer    | Technology            |
+| -------- | --------------------- |
+| Frontend | React + Vite          |
+| Backend  | Python + FastAPI      |
+| Database | SQLite + SQLAlchemy   |
+| Routing  | React Router DOM      |
+| Styling  | CSS (inline + global) |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📁 Project Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+BakesByNeha/
+├── backend/
+│   ├── main.py          # FastAPI routes
+│   ├── database.py      # DB connection setup
+│   ├── models.py        # Recipe table model
+│   └── recipes.db       # SQLite database (auto-created)
+├── frontend/
+│   └── src/
+│       ├── components/
+│       │   ├── Home.jsx          # Recipe cards grid
+│       │   └── RecipeDetail.jsx  # Single recipe page
+│       ├── App.jsx        # Routes setup
+│       ├── App.css        # Navbar styles
+│       └── index.css      # Global styles
+├── .gitignore
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/BakesByNeha.git
+cd BakesByNeha
 ```
+
+### 2. Start the Backend
+
+```bash
+cd backend
+pip install fastapi uvicorn sqlalchemy
+uvicorn main:app --reload
+```
+
+Backend runs at → **http://localhost:8000**
+
+### 3. Start the Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend runs at → **http://localhost:5173**
+
+---
+
+## 🔗 API Endpoints
+
+| Method | Endpoint          | Description       |
+| ------ | ----------------- | ----------------- |
+| GET    | `/`               | Welcome message   |
+| GET    | `/recipes`        | Get all 5 recipes |
+| GET    | `/recipes/{name}` | Get one recipe    |
+
+**Example:**
+
+```
+GET http://localhost:8000/recipes/chocolate_cake
+```
+
+---
+
+## 🍰 Recipes Included
+
+- Chocolate Cake
+- Cookies
+- Brownie
+- Vanilla Cake
+- Cheesecake
+
+---
+
+## 💡 React Concepts Used
+
+| Concept       | Where Used                     |
+| ------------- | ------------------------------ |
+| `useState`    | Storing fetched recipe data    |
+| `useEffect`   | Fetching API on page load      |
+| `useParams`   | Reading recipe name from URL   |
+| `useNavigate` | Navigating between pages       |
+| React Router  | Home page ↔ Recipe detail page |
+| Components    | `Home`,`RecipeDetail`          |
+| Props         | Passing data into components   |
+
+---
+
+## 🗄️ Database
+
+Uses **SQLite** via **SQLAlchemy ORM** . The database is automatically created and seeded with 5 recipes on first run — no manual setup needed!
+
+---
+
+## 👩‍💻 Author
+
+Made with 🌸 by **Neha**

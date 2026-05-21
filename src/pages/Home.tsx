@@ -6,12 +6,13 @@ import type { Recipe } from "../types/recipe";
 
 function Home() {
   const [recipes, setRecipes] = useState(null);
+  const base = import.meta.env.BASE_URL;
 
   useEffect(() => {
     // Fetch JSON from public folder
     const loadJson = async () => {
       try {
-        const response = await fetch("/data/recipes.json");
+        const response = await fetch(`${base}/data/recipes.json`);
 
         // Validate the response
         if (!response.ok) {

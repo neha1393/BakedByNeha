@@ -1,0 +1,169 @@
+{
+  "chocolate_cake": {
+    "id": 1,
+    "name": "Chocolate Cake",
+    "servings": 8,
+    "image": "/images/cake.jpg",
+    "ingredients": {
+      "flour": "2 cups",
+      "sugar": "1.5 cups",
+      "cocoa powder": "0.5 cups",
+      "butter": "0.5 cups",
+      "eggs": "3",
+      "milk": "1 cup",
+      "baking powder": "1.5 tsp"
+    },
+    "instructions": [
+      "Mix dry ingredients.",
+      "Add butter, eggs and milk.",
+      "Pour into pan.",
+      "Bake at 180°C for 30 mins."
+    ],
+    "tips": [
+      "Preheat oven before baking.",
+      "Use room temperature ingredients.",
+      "Measure accurately for best texture.",
+      "Cool before frosting or serving."
+    ]
+  },
+
+  "cookies": {
+    "id": 2,
+    "name": "Cookies",
+    "servings": 24,
+    "image": "/images/cookies.jpg",
+    "ingredients": {
+      "flour": "2.25 cups",
+      "sugar": "0.75 cups",
+      "butter": "1 cup",
+      "eggs": "2",
+      "chocolate chips": "2 cups",
+      "vanilla extract": "1 tsp",
+      "baking soda": "1 tsp"
+    },
+    "instructions": [
+      "Cream butter and sugar.",
+      "Add eggs and vanilla.",
+      "Mix in flour and chocolate chips.",
+      "Bake at 190°C for 10 mins."
+    ],
+    "tips": [
+      "Chill dough for thicker cookies.",
+      "Do not overmix the batter.",
+      "Use parchment paper for easy cleanup.",
+      "Let cookies cool before storing."
+    ]
+  },
+
+  "brownie": {
+    "id": 3,
+    "name": "Brownie",
+    "servings": 16,
+    "image": "/images/brownie.jpg",
+    "ingredients": {
+      "butter": "0.5 cups",
+      "sugar": "1 cup",
+      "cocoa powder": "0.33 cups",
+      "eggs": "2",
+      "flour": "0.5 cups",
+      "vanilla extract": "1 tsp",
+      "salt": "0.25 tsp"
+    },
+    "instructions": [
+      "Melt butter.",
+      "Mix in sugar and cocoa.",
+      "Add eggs and vanilla.",
+      "Fold in flour.",
+      "Bake at 175°C for 25 mins."
+    ],
+    "tips": [
+      "Do not overbake brownies.",
+      "Use high-quality cocoa powder.",
+      "Cool completely before cutting.",
+      "Line pan with parchment paper."
+    ]
+  },
+
+  "strawberry_cheesecake": {
+    "id": 4,
+    "name": "Strawberry Cheesecake",
+    "servings": 10,
+    "image": "/images/strawbeery_cake.jpg",
+    "ingredients": {
+      "cream_cheese": "500g",
+      "sugar": "1 cup",
+      "eggs": "3",
+      "biscuits": "200g",
+      "butter": "100g",
+      "strawberries": "1 cup"
+    },
+    "instructions": [
+      "Prepare biscuit base.",
+      "Beat cream cheese and sugar.",
+      "Add eggs.",
+      "Bake until set.",
+      "Top with strawberries."
+    ],
+    "tips": [
+      "Use softened cream cheese.",
+      "Bake in a water bath for smooth texture.",
+      "Chill before serving.",
+      "Fresh strawberries work best."
+    ]
+  },
+
+  "red_velvet": {
+    "id": 5,
+    "name": "Red Velvet Cake",
+    "servings": 12,
+    "image": "/images/velvet.jpg",
+    "ingredients": {
+      "flour": "2.5 cups",
+      "cocoa": "2 tbsp",
+      "sugar": "1.5 cups",
+      "eggs": "2",
+      "buttermilk": "1 cup",
+      "red color": "2 tsp"
+    },
+    "instructions": [
+      "Mix dry ingredients.",
+      "Add wet ingredients.",
+      "Blend into smooth batter.",
+      "Bake at 180°C for 35 mins.",
+      "Frost with cream cheese frosting."
+    ],
+    "tips": [
+      "Do not overmix the batter.",
+      "Use gel food coloring for vibrant color.",
+      "Cool cake fully before frosting.",
+      "Store refrigerated for freshness."
+    ]
+  },
+
+  "donuts": {
+    "id": 6,
+    "name": "Chocolate Donuts",
+    "servings": 8,
+    "image": "/images/donut.jpg",
+    "ingredients": {
+      "flour": "2 cups",
+      "yeast": "1 tbsp",
+      "sugar": "1/2 cup",
+      "milk": "1 cup",
+      "chocolate": "200g"
+    },
+    "instructions": [
+      "Prepare dough.",
+      "Let dough rise.",
+      "Shape donuts.",
+      "Fry until golden.",
+      "Coat with melted chocolate glaze."
+    ],
+    "tips": [
+      "Use warm milk for activating yeast.",
+      "Avoid overheating oil.",
+      "Drain donuts on paper towels.",
+      "Add sprinkles before glaze sets."
+    ]
+  }
+}

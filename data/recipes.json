@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Chocolate Cake",
     "servings": 8,
-    "image": "/images/cake.jpg",
+    "image": "/BakedByNeha/images/cake.jpg",
     "ingredients": {
       "flour": "2 cups",
       "sugar": "1.5 cups",
@@ -31,7 +31,7 @@
     "id": 2,
     "name": "Cookies",
     "servings": 24,
-    "image": "/images/cookies.jpg",
+    "image": "/BakedByNeha/images/cookies.jpg",
     "ingredients": {
       "flour": "2.25 cups",
       "sugar": "0.75 cups",
@@ -59,7 +59,7 @@
     "id": 3,
     "name": "Brownie",
     "servings": 16,
-    "image": "/images/brownie.jpg",
+    "image": "/BakedByNeha/images/brownie.jpg",
     "ingredients": {
       "butter": "0.5 cups",
       "sugar": "1 cup",
@@ -88,7 +88,7 @@
     "id": 4,
     "name": "Strawberry Cheesecake",
     "servings": 10,
-    "image": "/images/strawbeery_cake.jpg",
+    "image": "/BakedByNeha/images/strawbeery_cake.jpg",
     "ingredients": {
       "cream_cheese": "500g",
       "sugar": "1 cup",
@@ -116,7 +116,7 @@
     "id": 5,
     "name": "Red Velvet Cake",
     "servings": 12,
-    "image": "/images/velvet.jpg",
+    "image": "/BakedByNeha/images/velvet.jpg",
     "ingredients": {
       "flour": "2.5 cups",
       "cocoa": "2 tbsp",
@@ -144,7 +144,7 @@
     "id": 6,
     "name": "Chocolate Donuts",
     "servings": 8,
-    "image": "/images/donut.jpg",
+    "image": "/BakedByNeha/images/donut.jpg",
     "ingredients": {
       "flour": "2 cups",
       "yeast": "1 tbsp",
